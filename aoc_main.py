@@ -1,3 +1,4 @@
+## Updated to new environment
 ################################# Day 1 #################################
 ## Fuel required to launch a given module is based on its mass. Specifically, to find the fuel
 ## required for a module, take its mass, divide by three, round down, and subtract 2.
@@ -37,4 +38,3 @@ aoc_computer_functions.run_gravity_program(gravity_program)
 
 ## Find the input noun and verb that cause the program to produce the output 19690720. What is 100 *
 ## noun + verb? (For example, if noun=12 and verb=2, the answer would be 1202.)
-
