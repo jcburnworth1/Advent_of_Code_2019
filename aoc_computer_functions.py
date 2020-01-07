@@ -5,12 +5,12 @@ import os
 ## Function to load data
 def load_gravity_program(file_name):
     directory = os.getcwd()
-    files_available = os.listdir(directory)
+    files_available = os.listdir(directory + '/Advent_of_Code_2019')
 
     ## If file we need exists - Read each line into a separate item in a list
     if files_available.__contains__ (file_name):
         ## Read in the data for parsing
-        with open(directory + '/' + file_name) as file:
+        with open(directory + '/Advent_of_Code_2019/' + file_name) as file:
             gravity_program = file.readlines()
     else:
         print("File does not exists")

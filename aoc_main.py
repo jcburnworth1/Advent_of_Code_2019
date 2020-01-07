@@ -2,7 +2,7 @@
 ## Fuel required to launch a given module is based on its mass. Specifically, to find the fuel
 ## required for a module, take its mass, divide by three, round down, and subtract 2.
 ## Import needed libraries
-import aoc_fuel_functions
+import Advent_of_Code_2019.aoc_fuel_functions as aoc_fuel_functions
 
 ## Load fuel data
 module_data = aoc_fuel_functions.load_module_data('module_inputs.txt')
@@ -27,7 +27,7 @@ print("Required Fuel after accounting for weight of fuel: {0}".format(sum(fuel_n
 ## indicates what to do; for example, 99 means that the program is finished and should immediately halt.
 # Encountering an unknown opcode means something went wrong.
 ## Import needed libraries
-import aoc_computer_functions
+import Advent_of_Code_2019.aoc_computer_functions as aoc_computer_functions
 
 ## Load up gravity program
 gravity_program = aoc_computer_functions.load_gravity_program('gravity_program.txt')
