@@ -53,9 +53,8 @@ def run_gravity_program(gravity_program_list):
         opcode_value = gravity_program_list[opcode_index]; value_1 = gravity_program_list[value_1_index];
         value_2 = gravity_program_list[value_2_index]; update_position = gravity_program_list[update_position_index]
 
-    return gravity_program_list[0]
-
-
+    code = gravity_program_list[0]
+    return code
 
 ## Function to calculate gravity assist
 def run_gravity_assist_equation(gravity_program_list, initial_value_1 = 0, initial_value_2 = 0):
@@ -99,3 +98,7 @@ def run_gravity_assist_equation(gravity_program_list, initial_value_1 = 0, initi
         value_1 = gravity_program_list[value_1_index];
         value_2 = gravity_program_list[value_2_index];
         update_position = gravity_program_list[update_position_index]
+
+## Function to execute gravity assist
+def execute_gravity_assist(gravity_program_list, possible_combinations):
+    pass

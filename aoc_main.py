@@ -34,7 +34,15 @@ import Advent_of_Code_2019.aoc_computer_functions as aoc_computer_functions
 gravity_program = aoc_computer_functions.load_gravity_program('gravity_program.txt')
 
 ## Run program
-problem_code = aoc_computer_functions.run_gravity_program(gravity_program)
+code = aoc_computer_functions.run_gravity_program(gravity_program)
 
-## Find the input noun and verb that cause the program to produce the output 19690720. What is 100 *
-## noun + verb? (For example, if noun=12 and verb=2, the answer would be 1202.)
+## Print code that restores gravity
+print("Gravity Restored: {0}".format(code))
+
+## Find the input noun (address 1) and verb (address 2) that cause the program to produce the output 19690720.
+## What is 100 * noun + verb? (For example, if noun=12 and verb=2, the answer would be 1202.)
+## Values can be bewteen 0 - 99 for both addresses
+## Load up gravity program
+gravity_program = aoc_computer_functions.load_gravity_program('gravity_program.txt')
+
+## Run program - Brute force  method
