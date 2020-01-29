@@ -53,6 +53,8 @@ def run_gravity_program(gravity_program_list):
         opcode_value = gravity_program_list[opcode_index]; value_1 = gravity_program_list[value_1_index];
         value_2 = gravity_program_list[value_2_index]; update_position = gravity_program_list[update_position_index]
 
+    print(gravity_program_list[0])
+
 ## Function to calculate gravity assist
 def run_gravity_assist_equation(gravity_program_list, initial_value_1 = 0, initial_value_2 = 0):
     ## Update position 1 & 2 bases on problem ask
