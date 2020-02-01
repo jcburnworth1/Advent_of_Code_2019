@@ -43,7 +43,7 @@ print("Gravity Restored: {0}".format(code))
 ## What is 100 * noun + verb? (For example, if noun=12 and verb=2, the answer would be 1202.)
 ## Values can be between 0 - 99 for both addresses
 ## Load up gravity program
-gravity_program = aoc_computer_functions.load_gravity_program('Day_2/gravity_program.txt')
+gravity_program = aoc_computer_functions.load_gravity_program('gravity_program.txt')
 
 
 
