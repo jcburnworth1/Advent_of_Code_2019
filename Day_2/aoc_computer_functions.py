@@ -5,12 +5,12 @@ import os
 ## Function to load data
 def load_gravity_program(file_name):
     directory = os.getcwd()
-    files_available = os.listdir(directory + '/Advent_of_Code_2019')
+    files_available = os.listdir(directory + '/Advent_of_Code_2019/Day_2/')
 
     ## If file we need exists - Read each line into a separate item in a list
     if files_available.__contains__ (file_name):
         ## Read in the data for parsing
-        with open(directory + '/Advent_of_Code_2019/' + file_name) as file:
+        with open(directory + '/Advent_of_Code_2019/Day_2' + file_name) as file:
             gravity_program = file.readlines()
     else:
         print("File does not exists")
@@ -100,5 +100,5 @@ def run_gravity_assist_equation(gravity_program_list, initial_value_1 = 0, initi
         update_position = gravity_program_list[update_position_index]
 
 ## Function to execute gravity assist
-def execute_gravity_assist(gravity_program_list, possible_combinations):
+def execute_gravity_assist(gravity_program_list):
     pass
