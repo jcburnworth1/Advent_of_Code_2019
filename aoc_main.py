@@ -45,6 +45,5 @@ print("Gravity Restored: {0}".format(code))
 ## Load up gravity program
 gravity_program = aoc_computer_functions.load_gravity_program('gravity_program.txt')
 
-
-
-## Run program - Brute force  method
+## Run program - Brute force method
+noun,verb, result = aoc_computer_functions.execute_gravity_assist(gravity_program)
