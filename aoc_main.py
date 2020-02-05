@@ -71,4 +71,13 @@ noun,verb, result = aoc_computer_functions.execute_gravity_assist(gravity_progra
 import Advent_of_Code_2019.Day_3.aoc_wire_functions as aoc_wire_functions
 
 ## Load up the wire data
-wire1, wire2 = aoc_wire_functions.load_wires()
+wire_1, wire_2 = aoc_wire_functions.load_wires()
+
+## Process the data into points for plotting
+wire_1_points = aoc_wire_functions.create_wire_points(wire_1)
+wire_2_points = aoc_wire_functions.create_wire_points(wire_2)
+
+## Calculate overlapping points
+
+
+## Determine closest and calculate manhattan distance

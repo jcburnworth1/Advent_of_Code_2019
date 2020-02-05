@@ -1,6 +1,8 @@
 ## Day 2 Problems
 ## Import libraries
 import os
+from matplotlib import pyplot as plt
+import collections
 
 ## Function to load data
 def load_wires():
@@ -28,4 +30,32 @@ def load_wires():
 
         return wire1, wire2
 
+def create_wire_points(wire_directions):
+    current_x = 0; current_y = 0;
+    wire_points = [[current_x, current_y]]
+
+    for wire in wire_directions:
+
+        current_point = wire_points[-1]
+
+        if wire[0] == 'R':
+            wire_points.append([
+                current_point[0] + int(wire[1:]),
+                current_point[1]])
+        elif wire[0] == 'L':
+            wire_points.append([
+                current_point[0] + -int(wire[1:]),
+                current_point[1]])
+        elif wire[0] == 'U':
+            wire_points.append([
+                current_point[0],
+                current_point[1] + int(wire[1:])])
+        elif wire[0 == 'D']:
+            wire_points.append([
+                current_point[0],
+                current_point[1] + -int(wire[1:])])
+        else:
+            continue
+
+    return wire_points
 
